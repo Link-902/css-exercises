@@ -9,6 +9,9 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -29,6 +32,19 @@ body {
   font-style: italic;
 }
 
+.left{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
 button {
   border: none;
   border-radius: 8px;
@@ -44,5 +60,8 @@ a {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
+  flex-direction: row;
+  gap: 16px;
 }
